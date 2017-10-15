@@ -1,16 +1,29 @@
 PODS:
+  - FDFullscreenPopGesture (1.1)
   - LL2048 (1.0.0)
+  - LLRoute (1.0.0)
 
 DEPENDENCIES:
+  - FDFullscreenPopGesture (~> 1.1)
   - LL2048 (from `.`)
+  - LLRoute (from `https://github.com/LiGuanWen/LLRoute.git`)
 
 EXTERNAL SOURCES:
   LL2048:
     :path: .
+  LLRoute:
+    :git: https://github.com/LiGuanWen/LLRoute.git
+
+CHECKOUT OPTIONS:
+  LLRoute:
+    :commit: 498c1f1fb8162473be7a5de6538ebdfe1fca2784
+    :git: https://github.com/LiGuanWen/LLRoute.git
 
 SPEC CHECKSUMS:
-  LL2048: a8766c5d01785846f58cd34e23d3aa0ece6f7826
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  LL2048: 65e21667277276cf54d22d2edec4cb000083b9fd
+  LLRoute: 6f93b69c2024828c46a8b1aa334890778531ddba
 
-PODFILE CHECKSUM: 5f9aeda846996daae26a83dc42ca343ccb3fdf5e
+PODFILE CHECKSUM: addf85682426e06f2803feb6bb0226fe987cd108
 
 COCOAPODS: 1.3.0.beta.2

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LL2048MenuViewController">
+            <connections>
+                <outlet property="gameBeganButton" destination="PsE-kX-iah" id="xdd-ry-AaP"/>
+                <outlet property="gameRankingButton" destination="Qnd-HT-hmh" id="ean-7o-zBV"/>
+                <outlet property="gameSettingButton" destination="lc9-j5-FgL" id="IsL-rQ-xAq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsE-kX-iah">
+                    <rect key="frame" x="143.5" y="311.5" width="88" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DIV-0b-ow9"/>
+                        <constraint firstAttribute="width" constant="88" id="dgD-bC-zsM"/>
+                    </constraints>
+                    <state key="normal" title="2048">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="gameBeganAction:" destination="-1" eventType="touchUpInside" id="Jel-mD-p0u"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc9-j5-FgL">
+                    <rect key="frame" x="143.5" y="388.5" width="88" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="94c-AS-ojQ"/>
+                        <constraint firstAttribute="height" constant="44" id="unR-Sb-ADB"/>
+                    </constraints>
+                    <state key="normal" title="游戏设置">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="gameSettingAction:" destination="-1" eventType="touchUpInside" id="ywj-os-w4d"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnd-HT-hmh">
+                    <rect key="frame" x="143" y="465.5" width="88" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="dgl-0v-eJW"/>
+                        <constraint firstAttribute="width" constant="88" id="mFf-Z6-ORf"/>
+                    </constraints>
+                    <state key="normal" title="排行榜">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="gameRankingAction:" destination="-1" eventType="touchUpInside" id="SbG-CK-WNs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHS-jf-Lp8">
+                    <rect key="frame" x="143" y="542.5" width="88" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="HEL-nc-x0L"/>
+                        <constraint firstAttribute="height" constant="44" id="NUX-Eo-LEo"/>
+                    </constraints>
+                    <state key="normal" title="关于游戏">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="gameAboutAction:" destination="-1" eventType="touchUpInside" id="fMy-7S-Ldn"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WX20171016-2534" translatesAutoresizingMaskIntoConstraints="NO" id="qes-bN-rj9">
+                    <rect key="frame" x="87.5" y="66" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="HGL-zB-NTm"/>
+                        <constraint firstAttribute="height" constant="200" id="Wfa-t0-ycq"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IHS-jf-Lp8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="E7B-Lc-QiJ"/>
+                <constraint firstItem="lc9-j5-FgL" firstAttribute="top" secondItem="PsE-kX-iah" secondAttribute="bottom" constant="33" id="V7J-3m-Qt9"/>
+                <constraint firstItem="IHS-jf-Lp8" firstAttribute="top" secondItem="Qnd-HT-hmh" secondAttribute="bottom" constant="33" id="WDK-M7-G05"/>
+                <constraint firstItem="PsE-kX-iah" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Xve-S2-6gO"/>
+                <constraint firstItem="lc9-j5-FgL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zdx-NN-FG3"/>
+                <constraint firstItem="qes-bN-rj9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jp4-X6-e2f"/>
+                <constraint firstItem="Qnd-HT-hmh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mcX-Nz-41R"/>
+                <constraint firstItem="PsE-kX-iah" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uOo-eX-CB1"/>
+                <constraint firstItem="qes-bN-rj9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="66" id="v1Y-ke-dP2"/>
+                <constraint firstItem="Qnd-HT-hmh" firstAttribute="top" secondItem="lc9-j5-FgL" secondAttribute="bottom" constant="33" id="y3a-rL-KWV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WX20171016-2534" width="431" height="431"/>
+    </resources>
+</document>

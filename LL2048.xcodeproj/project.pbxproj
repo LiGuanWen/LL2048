@@ -297,9 +297,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LL2048/Pods-LL2048-resources.sh",
+				"${PODS_ROOT}/../LL2048Class/LL2048About/ViewController/LL2048AboutViewController.xib",
+				"${PODS_ROOT}/../LL2048Class/LL2048Game/ViewController/LL2048GameViewController.xib",
+				"${PODS_ROOT}/../LL2048Class/LL2048Menu/ViewController/LL2048MenuViewController.xib",
+				"${PODS_ROOT}/../LL2048Class/LL2048RankingList/ViewController/LL2048RankingListViewController.xib",
+				"${PODS_ROOT}/../LL2048Class/LL2048Setting/ViewController/LL2048SettingViewController.xib",
+				"${PODS_ROOT}/../LL2048Class/LL2048Resource.bundle",
+				"${PODS_ROOT}/../LL2048Class/LL2048Asset.xcassets",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -516,7 +525,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y688PQN5Q4;
 				INFOPLIST_FILE = LL2048/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LL2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,7 +543,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y688PQN5Q4;
 				INFOPLIST_FILE = LL2048/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LL2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
