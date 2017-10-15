@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F4B0A4573ACBBCB88093EF /* libPods-LL2048.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28673F172A549A5B6D4E9B4F /* libPods-LL2048.a */; };
+		FD23AADB1F93B2B2001803B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD23AADA1F93B2B2001803B5 /* AppDelegate.m */; };
+		FD23AADE1F93B2B2001803B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD23AADD1F93B2B2001803B5 /* ViewController.m */; };
+		FD23AAE11F93B2B2001803B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD23AADF1F93B2B2001803B5 /* Main.storyboard */; };
+		FD23AAE41F93B2B2001803B5 /* LL2048.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD23AAE21F93B2B2001803B5 /* LL2048.xcdatamodeld */; };
+		FD23AAE61F93B2B2001803B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD23AAE51F93B2B2001803B5 /* Assets.xcassets */; };
+		FD23AAE91F93B2B2001803B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD23AAE71F93B2B2001803B5 /* LaunchScreen.storyboard */; };
+		FD23AAEC1F93B2B2001803B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD23AAEB1F93B2B2001803B5 /* main.m */; };
+		FD23AAF61F93B2B2001803B5 /* LL2048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD23AAF51F93B2B2001803B5 /* LL2048Tests.m */; };
+		FD23AB011F93B2B2001803B5 /* LL2048UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD23AB001F93B2B2001803B5 /* LL2048UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD23AAF21F93B2B2001803B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD23AACE1F93B2B2001803B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD23AAD51F93B2B2001803B5;
+			remoteInfo = LL2048;
+		};
+		FD23AAFD1F93B2B2001803B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD23AACE1F93B2B2001803B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD23AAD51F93B2B2001803B5;
+			remoteInfo = LL2048;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28673F172A549A5B6D4E9B4F /* libPods-LL2048.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LL2048.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		686415A259E49547CF867056 /* Pods-LL2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LL2048.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LL2048/Pods-LL2048.debug.xcconfig"; sourceTree = "<group>"; };
+		F905AC8AA7E2C48614FFECD9 /* Pods-LL2048.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LL2048.release.xcconfig"; path = "Pods/Target Support Files/Pods-LL2048/Pods-LL2048.release.xcconfig"; sourceTree = "<group>"; };
+		FD23AAD61F93B2B2001803B5 /* LL2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LL2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD23AAD91F93B2B2001803B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD23AADA1F93B2B2001803B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD23AADC1F93B2B2001803B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD23AADD1F93B2B2001803B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD23AAE01F93B2B2001803B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD23AAE31F93B2B2001803B5 /* LL2048.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LL2048.xcdatamodel; sourceTree = "<group>"; };
+		FD23AAE51F93B2B2001803B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD23AAE81F93B2B2001803B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD23AAEA1F93B2B2001803B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD23AAEB1F93B2B2001803B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD23AAF11F93B2B2001803B5 /* LL2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LL2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD23AAF51F93B2B2001803B5 /* LL2048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LL2048Tests.m; sourceTree = "<group>"; };
+		FD23AAF71F93B2B2001803B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD23AAFC1F93B2B2001803B5 /* LL2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LL2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD23AB001F93B2B2001803B5 /* LL2048UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LL2048UITests.m; sourceTree = "<group>"; };
+		FD23AB021F93B2B2001803B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD23AAD31F93B2B2001803B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F4B0A4573ACBBCB88093EF /* libPods-LL2048.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD23AAEE1F93B2B2001803B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD23AAF91F93B2B2001803B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20AD5E60702511DA4B22C149 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				686415A259E49547CF867056 /* Pods-LL2048.debug.xcconfig */,
+				F905AC8AA7E2C48614FFECD9 /* Pods-LL2048.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		933F03F3F34D4EA814AFCD8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28673F172A549A5B6D4E9B4F /* libPods-LL2048.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD23AACD1F93B2B2001803B5 = {
+			isa = PBXGroup;
+			children = (
+				FD23AAD81F93B2B2001803B5 /* LL2048 */,
+				FD23AAF41F93B2B2001803B5 /* LL2048Tests */,
+				FD23AAFF1F93B2B2001803B5 /* LL2048UITests */,
+				FD23AAD71F93B2B2001803B5 /* Products */,
+				20AD5E60702511DA4B22C149 /* Pods */,
+				933F03F3F34D4EA814AFCD8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD23AAD71F93B2B2001803B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD23AAD61F93B2B2001803B5 /* LL2048.app */,
+				FD23AAF11F93B2B2001803B5 /* LL2048Tests.xctest */,
+				FD23AAFC1F93B2B2001803B5 /* LL2048UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD23AAD81F93B2B2001803B5 /* LL2048 */ = {
+			isa = PBXGroup;
+			children = (
+				FD23AAD91F93B2B2001803B5 /* AppDelegate.h */,
+				FD23AADA1F93B2B2001803B5 /* AppDelegate.m */,
+				FD23AADC1F93B2B2001803B5 /* ViewController.h */,
+				FD23AADD1F93B2B2001803B5 /* ViewController.m */,
+				FD23AADF1F93B2B2001803B5 /* Main.storyboard */,
+				FD23AAE51F93B2B2001803B5 /* Assets.xcassets */,
+				FD23AAE71F93B2B2001803B5 /* LaunchScreen.storyboard */,
+				FD23AAEA1F93B2B2001803B5 /* Info.plist */,
+				FD23AAEB1F93B2B2001803B5 /* main.m */,
+				FD23AAE21F93B2B2001803B5 /* LL2048.xcdatamodeld */,
+			);
+			path = LL2048;
+			sourceTree = "<group>";
+		};
+		FD23AAF41F93B2B2001803B5 /* LL2048Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FD23AAF51F93B2B2001803B5 /* LL2048Tests.m */,
+				FD23AAF71F93B2B2001803B5 /* Info.plist */,
+			);
+			path = LL2048Tests;
+			sourceTree = "<group>";
+		};
+		FD23AAFF1F93B2B2001803B5 /* LL2048UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD23AB001F93B2B2001803B5 /* LL2048UITests.m */,
+				FD23AB021F93B2B2001803B5 /* Info.plist */,
+			);
+			path = LL2048UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD23AAD51F93B2B2001803B5 /* LL2048 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD23AB051F93B2B2001803B5 /* Build configuration list for PBXNativeTarget "LL2048" */;
+			buildPhases = (
+				8082A64A35BF4DF0A4141950 /* [CP] Check Pods Manifest.lock */,
+				FD23AAD21F93B2B2001803B5 /* Sources */,
+				FD23AAD31F93B2B2001803B5 /* Frameworks */,
+				FD23AAD41F93B2B2001803B5 /* Resources */,
+				8911634C597113664DE968A6 /* [CP] Embed Pods Frameworks */,
+				34EA2BF5EA0EF4A02ECED8E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LL2048;
+			productName = LL2048;
+			productReference = FD23AAD61F93B2B2001803B5 /* LL2048.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD23AAF01F93B2B2001803B5 /* LL2048Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD23AB081F93B2B2001803B5 /* Build configuration list for PBXNativeTarget "LL2048Tests" */;
+			buildPhases = (
+				FD23AAED1F93B2B2001803B5 /* Sources */,
+				FD23AAEE1F93B2B2001803B5 /* Frameworks */,
+				FD23AAEF1F93B2B2001803B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD23AAF31F93B2B2001803B5 /* PBXTargetDependency */,
+			);
+			name = LL2048Tests;
+			productName = LL2048Tests;
+			productReference = FD23AAF11F93B2B2001803B5 /* LL2048Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD23AAFB1F93B2B2001803B5 /* LL2048UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD23AB0B1F93B2B2001803B5 /* Build configuration list for PBXNativeTarget "LL2048UITests" */;
+			buildPhases = (
+				FD23AAF81F93B2B2001803B5 /* Sources */,
+				FD23AAF91F93B2B2001803B5 /* Frameworks */,
+				FD23AAFA1F93B2B2001803B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD23AAFE1F93B2B2001803B5 /* PBXTargetDependency */,
+			);
+			name = LL2048UITests;
+			productName = LL2048UITests;
+			productReference = FD23AAFC1F93B2B2001803B5 /* LL2048UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD23AACE1F93B2B2001803B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "第七代目";
+				TargetAttributes = {
+					FD23AAD51F93B2B2001803B5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+					FD23AAF01F93B2B2001803B5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FD23AAD51F93B2B2001803B5;
+					};
+					FD23AAFB1F93B2B2001803B5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FD23AAD51F93B2B2001803B5;
+					};
+				};
+			};
+			buildConfigurationList = FD23AAD11F93B2B2001803B5 /* Build configuration list for PBXProject "LL2048" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD23AACD1F93B2B2001803B5;
+			productRefGroup = FD23AAD71F93B2B2001803B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD23AAD51F93B2B2001803B5 /* LL2048 */,
+				FD23AAF01F93B2B2001803B5 /* LL2048Tests */,
+				FD23AAFB1F93B2B2001803B5 /* LL2048UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD23AAD41F93B2B2001803B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD23AAE91F93B2B2001803B5 /* LaunchScreen.storyboard in Resources */,
+				FD23AAE61F93B2B2001803B5 /* Assets.xcassets in Resources */,
+				FD23AAE11F93B2B2001803B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD23AAEF1F93B2B2001803B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD23AAFA1F93B2B2001803B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34EA2BF5EA0EF4A02ECED8E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LL2048/Pods-LL2048-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8082A64A35BF4DF0A4141950 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LL2048-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8911634C597113664DE968A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LL2048/Pods-LL2048-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD23AAD21F93B2B2001803B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD23AADE1F93B2B2001803B5 /* ViewController.m in Sources */,
+				FD23AAE41F93B2B2001803B5 /* LL2048.xcdatamodeld in Sources */,
+				FD23AAEC1F93B2B2001803B5 /* main.m in Sources */,
+				FD23AADB1F93B2B2001803B5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD23AAED1F93B2B2001803B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD23AAF61F93B2B2001803B5 /* LL2048Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD23AAF81F93B2B2001803B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD23AB011F93B2B2001803B5 /* LL2048UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD23AAF31F93B2B2001803B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD23AAD51F93B2B2001803B5 /* LL2048 */;
+			targetProxy = FD23AAF21F93B2B2001803B5 /* PBXContainerItemProxy */;
+		};
+		FD23AAFE1F93B2B2001803B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD23AAD51F93B2B2001803B5 /* LL2048 */;
+			targetProxy = FD23AAFD1F93B2B2001803B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD23AADF1F93B2B2001803B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD23AAE01F93B2B2001803B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD23AAE71F93B2B2001803B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD23AAE81F93B2B2001803B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD23AB031F93B2B2001803B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD23AB041F93B2B2001803B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD23AB061F93B2B2001803B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686415A259E49547CF867056 /* Pods-LL2048.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y688PQN5Q4;
+				INFOPLIST_FILE = LL2048/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LL2048;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3b87a13b-2a90-4930-9ed4-5f4164d262e1";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Wildcard App Development";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD23AB071F93B2B2001803B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F905AC8AA7E2C48614FFECD9 /* Pods-LL2048.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y688PQN5Q4;
+				INFOPLIST_FILE = LL2048/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LL2048;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3b87a13b-2a90-4930-9ed4-5f4164d262e1";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Wildcard App Development";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD23AB091F93B2B2001803B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				INFOPLIST_FILE = LL2048Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LL2048Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LL2048.app/LL2048";
+			};
+			name = Debug;
+		};
+		FD23AB0A1F93B2B2001803B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				INFOPLIST_FILE = LL2048Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LL2048Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LL2048.app/LL2048";
+			};
+			name = Release;
+		};
+		FD23AB0C1F93B2B2001803B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				INFOPLIST_FILE = LL2048UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LL2048UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LL2048;
+			};
+			name = Debug;
+		};
+		FD23AB0D1F93B2B2001803B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				INFOPLIST_FILE = LL2048UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LL2048UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LL2048;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD23AAD11F93B2B2001803B5 /* Build configuration list for PBXProject "LL2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD23AB031F93B2B2001803B5 /* Debug */,
+				FD23AB041F93B2B2001803B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD23AB051F93B2B2001803B5 /* Build configuration list for PBXNativeTarget "LL2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD23AB061F93B2B2001803B5 /* Debug */,
+				FD23AB071F93B2B2001803B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD23AB081F93B2B2001803B5 /* Build configuration list for PBXNativeTarget "LL2048Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD23AB091F93B2B2001803B5 /* Debug */,
+				FD23AB0A1F93B2B2001803B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD23AB0B1F93B2B2001803B5 /* Build configuration list for PBXNativeTarget "LL2048UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD23AB0C1F93B2B2001803B5 /* Debug */,
+				FD23AB0D1F93B2B2001803B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD23AAE21F93B2B2001803B5 /* LL2048.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD23AAE31F93B2B2001803B5 /* LL2048.xcdatamodel */,
+			);
+			currentVersion = FD23AAE31F93B2B2001803B5 /* LL2048.xcdatamodel */;
+			path = LL2048.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD23AACE1F93B2B2001803B5 /* Project object */;
+}
