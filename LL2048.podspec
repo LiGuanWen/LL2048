@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.author       = { "Lilong" => "diqidaimu@qq.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/LiGuanWen/LL2048.git", :branch => "#{s.version}" }
-  s.source_files  = "LL2048Class/**/*.{h,m}"
+  s.source_files = "LL2048Class/**/*.{h,m}"
   s.resources    = "LL2048Class/**/*.xib","LL2048Class/**/*.bundle","LL2048Class/**/*.xcassets"
-
+  s.ios.framework    = "SpriteKit"
 end

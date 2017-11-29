@@ -39,8 +39,6 @@
 //关于
 - (IBAction)gameAboutAction:(id)sender {
     [LLRoute routeWithUrl:[NSURL URLWithString:ll2048_routeWithAbout] currentVC:self hidesBottomBarWhenPushed:YES parameterDict:nil];
-
-    
 }
 
 - (void)didReceiveMemoryWarning {

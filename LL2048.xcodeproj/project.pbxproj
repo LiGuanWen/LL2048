@@ -57,6 +57,7 @@
 		FD23AAFC1F93B2B2001803B5 /* LL2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LL2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD23AB001F93B2B2001803B5 /* LL2048UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LL2048UITests.m; sourceTree = "<group>"; };
 		FD23AB021F93B2B2001803B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA9884C1F9E431700387E08 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		933F03F3F34D4EA814AFCD8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDA9884C1F9E431700387E08 /* SpriteKit.framework */,
 				28673F172A549A5B6D4E9B4F /* libPods-LL2048.a */,
 			);
 			name = Frameworks;

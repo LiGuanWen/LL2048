@@ -2,7 +2,7 @@
 platform:ios,’9.0’
 target ‘LL2048’ do
     pod 'LL2048', :path => '.'
-    pod 'LLRoute', :git => 'https://github.com/LiGuanWen/LLRoute.git'
+    pod 'LLRoute', '~> 1.0.0'
     pod 'FDFullscreenPopGesture', '~> 1.1'
 
 end
